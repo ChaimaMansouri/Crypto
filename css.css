@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(HOME.jpg);
+    height: 100vh;
+}
+
+.enc-buttons {
+    display: grid;
+    gap: 10PX;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20PX;
+}
+
+.enc{
+   padding: 10PX 20PX;
+   border-radius: 8PX;
+   border: none;
+   font-size: 16px;
+   color: white;
+   background-color: #ea00ac;
+   border: none;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0 0 1px #fd9de8, 0 0 15px #fd9de8, 0 0 30px #fd9de8, 0 0 60px #fd9de8;
+}
+
+.enc:hover {
+    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+    transform: scale(1.05);
+}
+
+.encn:active {
+    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+    transform: scale(1.05);
+}
+
+.G {
+    padding: 0 60px 30px 60px;
+    background-color:white;
+    display: grid;
+    row-gap: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 1px #4f4f4f, 0 0 px #4f4f4f, 0 0 30px #4f4f4f, 0 0 60px #4f4f4f;
+}
+
+input {
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid #000;
+}
+
+.input {
+    width: 270px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid #000;
+}
+
+.glowing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ea00ac;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 1px #fd9de8, 0 0 15px #fd9de8, 0 0 30px #fd9de8, 0 0 60px #fd9de8;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.glowing-button:hover {
+    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+    transform: scale(1.05);
+}
+
+.glowing-button:active {
+    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+    transform: scale(1.05);
+}
+
+.glowing-button::before {
+    content: '★';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 24px;
+    color: #7e0063;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.glowing-button:hover::before {
+    opacity: 1;
+}
+
+.glowing-button:active::before {
+    opacity: 0.5;
+}
