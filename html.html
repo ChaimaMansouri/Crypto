@@ -14,18 +14,34 @@
             <button class="enc" id="dec">Decryption</button>
         </div>
         <div class="global1 G">
-            <h1>Code Crypto</h1>
+            <h1>Encryption</h1>
+            <label for="cipherType">Select Cipher Type</label>
+            <select id="cipherType">
+                <option value="base64">Base64</option>
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+            </select>
             <label for="password">Type Password</label>
             <input type="text" id="password">
+            <label for="key">Key (for Caesar or Vigenère)</label>
+            <input type="text" id="key">
             <label for="encrypted">Encrypted</label>
             <div class="input" id="encrypted"></div>
             <button type="button" class="glowing-button" id="convert">Convert</button>
         </div>
         <div class="global G">
-            <h1>Code Crypto</h1>
-            <label for="password">Decryption</label>
+            <h1>Decryption</h1>
+            <label for="cipherTypeDec">Select Cipher Type</label>
+            <select id="cipherTypeDec">
+                <option value="base64">Base64</option>
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+            </select>
+            <label for="password-dec">Type Encrypted Text</label>
             <input type="text" id="password-dec">
-            <label for="encrypted">Password</label>
+            <label for="key-dec">Key (for Caesar or Vigenère)</label>
+            <input type="text" id="key-dec">
+            <label for="decrypted">Decrypted</label>
             <div class="input" id="decrypted"></div>
             <button type="button" class="glowing-button" id="convert-dec">Convert</button>
         </div>

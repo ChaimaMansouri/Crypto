@@ -1,9 +1,16 @@
 body {
+    margin-top: 100PX;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(HOME.jpg);
-    height: 100vh;
+    background-image: url(HOME.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .enc-buttons {
@@ -14,33 +21,35 @@ body {
 }
 
 .enc{
+   margin-top: 30PX;
    padding: 10PX 20PX;
    border-radius: 8PX;
    border: none;
    font-size: 16px;
    color: white;
-   background-color: #ea00ac;
+   background-color: #4ab2b8;
    border: none;
    border-radius: 5px;
-   position: relative;
-   box-shadow: 0 0 1px #fd9de8, 0 0 15px #fd9de8, 0 0 30px #fd9de8, 0 0 60px #fd9de8;
+   position: relative; 
 }
 
 .enc:hover {
-    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+   
     transform: scale(1.05);
 }
 
 .encn:active {
-    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+   
     transform: scale(1.05);
 }
 
 .G {
     padding: 0 60px 30px 60px;
-    background-color:white;
+    background-color:rgba(94, 94, 94, 0.355);
+    backdrop-filter: blur(10px);
     display: grid;
     row-gap: 20px;
+    color: rgb(155, 157, 158);
     border-radius: 9px;
     box-shadow: 0 0 1px #4f4f4f, 0 0 px #4f4f4f, 0 0 30px #4f4f4f, 0 0 60px #4f4f4f;
 }
@@ -48,15 +57,23 @@ body {
 input {
     padding: 10px;
     border-radius: 9px;
-    border: 2px solid #000;
+    border: 2px solid #737373;
+    background-color: #4f4f4f1e;
+    color: #b0aeae;
 }
-
+select{
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid #737373;
+    background-color: #4f4f4f1e;
+    color: #b0aeae;
+}
 .input {
     width: 270px;
     height: 15px;
     padding: 10px;
     border-radius: 9px;
-    border: 2px solid #000;
+    border: 2px solid #737373;
 }
 
 .glowing-button {
@@ -64,22 +81,22 @@ input {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #ea00ac;
+    background-color: #4ab2b8;
     border: none;
     border-radius: 5px;
     position: relative;
-    box-shadow: 0 0 1px #fd9de8, 0 0 15px #fd9de8, 0 0 30px #fd9de8, 0 0 60px #fd9de8;
+  
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
 .glowing-button:hover {
-    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+   
     transform: scale(1.05);
 }
 
 .glowing-button:active {
-    box-shadow: 0 0 5px #fd9de8, 0 0 10px #fd9de8, 0 0 20px #fd9de8, 0 0 40px #fd9de8;
+   
     transform: scale(1.05);
 }
 
@@ -89,7 +106,7 @@ input {
     top: -10px;
     right: -10px;
     font-size: 24px;
-    color: #7e0063;
+    color: #00fbff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -100,4 +117,7 @@ input {
 
 .glowing-button:active::before {
     opacity: 0.5;
+}
+.global{
+    display: none;
 }
